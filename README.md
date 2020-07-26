@@ -12,15 +12,16 @@
 |      | モデル           | 文 -> 単語     | 単語 -> サブワード           | サブワード分割のための語彙構築アルゴリズム     |
 | ---: | :--------------- | :------------- | :--------------------------- | :--------------------------------------------- |
 | 0    | 多言語 BERT      | Whitespace     | WordPiece                    | BPE?                                           |
-| 1    | Kikuta           | --             | Sentencepiece (文から直接)   | Sentencepiece                                  |
+| 1    | Kikuta           | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
 | 2    | ストックマーク   | MeCab          | --                           | --                                             |
 | 3    | 京都大学         | Juman++        | WordPiece                    | BPE                                            |
 | 4    | 東北大学 (a)     | MeCab          | WordPiece                    | Sentencepiece (model_type=bpe)                 |
 | 5    | 東北大学 (b)     | MeCab          | Character                    | Sentencepiece (model_type=character)           |
-| 6    | ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece                                  |
+| 6    | ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
 | 7    | NICT (a)         | MeCab          | WordPiece                    | BPE                                            |
 | 8    | NICT (b)         | MeCab          | ---                          | ---                                            |
 | 9    | 東京大学         | MeCab          | WordPiece                    | BPE                                            |
+
 
 
 
