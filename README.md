@@ -18,8 +18,8 @@
 | 4    | 東北大学 (a)     | MeCab          | WordPiece                    | Sentencepiece (model_type=bpe)                 |
 | 5    | 東北大学 (b)     | MeCab          | Character                    | Sentencepiece (model_type=character)           |
 | 6    | ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece                                  |
-| 7    | NICT (a)         | MeCab          | WordPiece?                   | BPE                                            |
-| 8    | NICT (b)         | MeCab          | WordPiece?                   | Character                                      |
+| 7    | NICT (a)         | MeCab          | WordPiece                    | BPE                                            |
+| 8    | NICT (b)         | MeCab          | ---                          | ---                                            |
 | 9    | 東京大学         | MeCab          | WordPiece                    | BPE                                            |
 
 
