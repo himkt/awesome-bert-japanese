@@ -2,11 +2,15 @@
 
 日本語の学習済み BERT は文から単語への分かち書き，単語からサブワードへの分割の処理にいくつかの選択肢が存在します．
 また，単語をサブワードに分割する際に利用する語彙についても構築方法に数種類のバリエーションがあります．
+
 本リポジトリでは，公開されている学習済み BERT モデルについて，
 分かち書き・サブワード分割・語彙構築アルゴリズムそれぞれどのアルゴリズムが採用されているかを表にまとめています．
 
+A list of pre-trained BERT models for Japanese.
+Japanese is a complicated language; which doesn't have any word boundaries and has many kind of characters.
 
-## モデル
+
+## Model
 
 
 |      | モデル           | 文 -> 単語     | 単語 -> サブワード           | サブワード分割のための語彙構築アルゴリズム     |
@@ -23,9 +27,7 @@
 | 9    | 東京大学         | MeCab          | WordPiece                    | BPE                                            |
 
 
-
-
-## リンク
+## Reference
 
 - 多言語 BERT: https://github.com/google-research/bert/blob/master/multilingual.md
 - Kikuta: https://yoheikikuta.github.io/bert-japanese/
