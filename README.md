@@ -10,6 +10,13 @@ A list of pre-trained BERT models for Japanese.
 Japanese is a complicated language; which doesn't have any word boundaries and has many kind of characters.
 
 
+## Adding Your Model
+
+表に学習済みの BERT モデルを追加したい場合は Issue/PR よりお願いします．
+
+If you are interested in adding new pretrained BERT model for Japanese, please feel free to open issue/PR.
+
+
 ## Model
 
 
