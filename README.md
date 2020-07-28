@@ -32,14 +32,11 @@ Japanese is a complicated language; which doesn't have any word boundaries and h
 
 ## Reference
 
-- 多言語 BERT (2018/11): https://github.com/google-research/bert/blob/master/multilingual.md
+- Google (Multilingual BERT) (2018/11): https://github.com/google-research/bert/blob/master/multilingual.md
 - Kikuta (2019/01): https://yoheikikuta.github.io/bert-japanese/
-- ホットリンク (2019/03): https://www.hottolink.co.jp/blog/20190311_101674/
-- 京都大学 (2019/03): http://nlp.ist.i.kyoto-u.ac.jp/index.php?BERT%E6%97%A5%E6%9C%AC%E8%AA%9EPretrained%E3%83%A2%E3%83%87%E3%83%AB
-- ストックマーク (2019/04): https://qiita.com/mkt3/items/3c1278339ff1bcc0187f
-- 東北大学 (2019/12): https://github.com/cl-tohoku/bert-japanese
+- Hotto Link Inc. (2019/03): https://www.hottolink.co.jp/blog/20190311_101674/
+- Kyoto University (2019/03): http://nlp.ist.i.kyoto-u.ac.jp/index.php?BERT%E6%97%A5%E6%9C%AC%E8%AA%9EPretrained%E3%83%A2%E3%83%87%E3%83%AB
+- Stockmark Inc. (2019/04): https://qiita.com/mkt3/items/3c1278339ff1bcc0187f
+- Tohoku University (2019/12): https://github.com/cl-tohoku/bert-japanese
 - NICT (2020/03): https://alaginrc.nict.go.jp/nict-bert/index.html
-- 東京大学 (2020/03): https://ai-health.m.u-tokyo.ac.jp/uth-ber
-
-
-| ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
+- The University of Tokyo (2020/03): https://ai-health.m.u-tokyo.ac.jp/uth-ber
