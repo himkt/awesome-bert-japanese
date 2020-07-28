@@ -8,6 +8,8 @@
 
 A list of pre-trained BERT models for Japanese.
 Japanese is a complicated language; which doesn't have any word boundaries and has many kind of characters.
+Therefore, it requires word segmentation before tokenizing word into subwords.
+I summarize pretrained BERT models for Japanese by `word segmentation algorithm`, `subword tokenization algorithm`, and `algorithm for constructing vocabulary used in subword tokenization`.
 
 
 ## Model
