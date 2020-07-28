@@ -18,13 +18,13 @@ Japanese is a complicated language; which doesn't have any word boundaries and h
 | 0    | 多言語 BERT      | Whitespace     | WordPiece                    | BPE?                                           |
 | 1    | Kikuta           | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
 | 2    | ストックマーク   | MeCab          | --                           | --                                             |
-| 3    | 京都大学         | Juman++        | WordPiece                    | BPE                                            |
+| 3    | 京都大学         | Juman++        | WordPiece                    | subword-nmt (BPE)                             |
 | 4    | 東北大学 (a)     | MeCab          | WordPiece                    | Sentencepiece (model_type=bpe)                 |
 | 5    | 東北大学 (b)     | MeCab          | Character                    | Sentencepiece (model_type=character)           |
 | 6    | ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
-| 7    | NICT (a)         | MeCab          | WordPiece                    | BPE                                            |
+| 7    | NICT (a)         | MeCab          | WordPiece                    | subword-nmt (BPE)                                            |
 | 8    | NICT (b)         | MeCab          | ---                          | ---                                            |
-| 9    | 東京大学         | MeCab          | WordPiece                    | BPE                                            |
+| 9    | 東京大学         | MeCab          | WordPiece                    | ? (BPE)                                            |
 
 
 ## Reference
@@ -33,7 +33,7 @@ Japanese is a complicated language; which doesn't have any word boundaries and h
 - Kikuta: https://yoheikikuta.github.io/bert-japanese/
 - ストックマーク: https://qiita.com/mkt3/items/3c1278339ff1bcc0187f
 - ホットリンク: https://www.hottolink.co.jp/blog/20190311_101674/
-- 京都大学: https://www.anlp.jp/proceedings/annual_meeting/2019/pdf_dir/F2-4.pdf
+- 京都大学: http://nlp.ist.i.kyoto-u.ac.jp/index.php?BERT%E6%97%A5%E6%9C%AC%E8%AA%9EPretrained%E3%83%A2%E3%83%87%E3%83%AB
 - 東北大学: https://github.com/cl-tohoku/bert-japanese
 - NICT: https://alaginrc.nict.go.jp/nict-bert/index.html
 - 東京大学: https://ai-health.m.u-tokyo.ac.jp/uth-ber
