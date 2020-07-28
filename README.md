@@ -10,29 +10,24 @@ A list of pre-trained BERT models for Japanese.
 Japanese is a complicated language; which doesn't have any word boundaries and has many kind of characters.
 
 
-## Adding Your Model
-
-表に学習済みの BERT モデルを追加したい場合は Issue/PR よりお願いします．
-
-If you are interested in adding new pretrained BERT model for Japanese, please feel free to open issue/PR.
-
-
 ## Model
 
 
-| モデル           | 文 -> 単語     | 単語 -> サブワード           | サブワード分割のための語彙構築アルゴリズム     |
-| :--------------- | :------------- | :--------------------------- | :--------------------------------------------- |
-| 多言語 BERT      | Whitespace     | WordPiece                    | BPE?                                           |
-| Kikuta           | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
-| ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
-| 京都大学         | Juman++        | WordPiece                    | subword-nmt (BPE)                             |
-| ストックマーク   | MeCab          | --                           | --                                             |
-| 東北大学 (a)     | MeCab          | WordPiece                    | Sentencepiece (model_type=bpe)                 |
-| 東北大学 (b)     | MeCab          | Character                    | Sentncepiece (model_type=character)           |
-| NICT (a)         | MeCab          | WordPiece                    | subword-nmt (BPE)                                            |
-| NICT (b)         | MeCab          | ---                          | ---                                            |
-| 東京大学         | MeCab          | WordPiece                    | ? (BPE)                                            |
+| Model                      | Sentence -> Words | Word -> Subword                           | Algorithm for constructing vocabulary used in subword tokenization     |
+| :------------------------- | :---------------- | :---------------------------------------- | :--------------------------------------------------------------------- |
+| Google (Multilingual BERT) | Whitespace        | WordPiece                                 | BPE?                                                                   |
+| Kikuta                     | --                | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
+| Hotto Link Inc.            | --                | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
+| Kyoto University           | Juman++           | WordPiece                                 | subword-nmt (BPE)                                                      |
+| Stockmark Inc.             | MeCab             | --                                        | --                                                                     |
+| Tohoku University (a)      | MeCab             | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
+| Tohoku University (b)      | MeCab             | Character                                 | Sentencepiece (model_type=character)                                   |
+| NICT (a)                   | MeCab             | WordPiece                                 | subword-nmt (BPE)                                                      |
+| NICT (b)                   | MeCab             | ---                                       | ---                                                                    |
+| The University of Tokyo    | MeCab             | WordPiece                                 | ? (BPE)                                                                |
 
+* NICT: National Institute of Information and Communications Technology
+* without word segmentation: 文を単語に分割せず直接サブワードへ分割する
 
 
 ## Reference
@@ -45,3 +40,6 @@ If you are interested in adding new pretrained BERT model for Japanese, please f
 - 東北大学 (2019/12): https://github.com/cl-tohoku/bert-japanese
 - NICT (2020/03): https://alaginrc.nict.go.jp/nict-bert/index.html
 - 東京大学 (2020/03): https://ai-health.m.u-tokyo.ac.jp/uth-ber
+
+
+| ホットリンク     | --             | Sentencepiece (文から直接)   | Sentencepiece (model_type=unigram)             |
