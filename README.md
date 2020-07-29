@@ -15,18 +15,19 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 ## Model
 
 
-| Model                      | Sentence -> Words | Word -> Subword                           | Algorithm for constructing vocabulary used in subword tokenization     |
-| :------------------------- | :---------------- | :---------------------------------------- | :--------------------------------------------------------------------- |
-| Google (Multilingual BERT) | Whitespace        | WordPiece                                 | BPE?                                                                   |
-| Kikuta                     | --                | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
-| Hotto Link Inc.            | --                | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
-| Kyoto University           | Juman++           | WordPiece                                 | subword-nmt (BPE)                                                      |
-| Stockmark Inc.             | MeCab             | --                                        | --                                                                     |
-| Tohoku University (a)      | MeCab             | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
-| Tohoku University (b)      | MeCab             | Character                                 | Sentencepiece (model_type=character)                                   |
-| NICT (a)                   | MeCab             | WordPiece                                 | subword-nmt (BPE)                                                      |
-| NICT (b)                   | MeCab             | ---                                       | ---                                                                    |
-| The University of Tokyo    | MeCab             | WordPiece                                 | ? (BPE)                                                                |
+| Model                      | Sentence -> Words                                | Word -> Subword                           | Algorithm for constructing vocabulary used in subword tokenization     |
+| :------------------------- | :----------------                                | :---------------------------------------- | :--------------------------------------------------------------------- |
+| Google (Multilingual BERT) | Whitespace                                       | WordPiece                                 | BPE?                                                                   |
+| Kikuta                     | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
+| Hotto Link Inc.            | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
+| Kyoto University           | Juman++                                          | WordPiece                                 | subword-nmt (BPE)                                                      |
+| Stockmark Inc.             | MeCab (mecab-ipadic-neologd)                     | --                                        | --                                                                     |
+| Tohoku University (a)      | MeCab (mecab-ipadic? mecab-ipadic-neologd?)      | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
+| Tohoku University (b)      | MeCab (mecab-ipadic? mecab-ipadic-neologd?)      | Character                                 | Sentencepiece (model_type=character)                                   |
+| NICT (a)                   | MeCab (mecab-jumandic)                           | WordPiece                                 | subword-nmt (BPE)                                                      |
+| NICT (b)                   | MeCab (mecab-jumandic)                           | ---                                       | ---                                                                    |
+| The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic) | WordPiece                                 | ? (BPE)                                                                |
+
 
 * NICT: National Institute of Information and Communications Technology
 * without word segmentation: 文を単語に分割せず直接サブワードへ分割する
