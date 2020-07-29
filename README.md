@@ -22,8 +22,8 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 | Hotto Link Inc.            | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
 | Kyoto University           | Juman++                                          | WordPiece                                 | subword-nmt (BPE)                                                      |
 | Stockmark Inc.             | MeCab (mecab-ipadic-neologd)                     | --                                        | --                                                                     |
-| Tohoku University (a)      | MeCab (mecab-ipadic? mecab-ipadic-neologd?)      | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
-| Tohoku University (b)      | MeCab (mecab-ipadic? mecab-ipadic-neologd?)      | Character                                 | Sentencepiece (model_type=character)                                   |
+| Tohoku University (a)      | MeCab (mecab-ipadic)                             | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
+| Tohoku University (b)      | MeCab (mecab-ipadic)                             | Character                                 | Sentencepiece (model_type=character)                                   |
 | NICT (a)                   | MeCab (mecab-jumandic)                           | WordPiece                                 | subword-nmt (BPE)                                                      |
 | NICT (b)                   | MeCab (mecab-jumandic)                           | ---                                       | ---                                                                    |
 | The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic) | WordPiece                                 | ? (BPE)                                                                |
@@ -33,6 +33,7 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 
 * NICT: National Institute of Information and Communications Technology
 * without word segmentation: 文を単語に分割せず直接サブワードへ分割する
+* for models by Tohoku University, MeCab+mecab-ipadic-neologd is used for sentence segmentation
 
 
 ## Reference
