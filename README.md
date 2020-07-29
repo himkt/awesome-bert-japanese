@@ -33,7 +33,7 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 
 * NICT: National Institute of Information and Communications Technology
 * without word segmentation: 文を単語に分割せず直接サブワードへ分割する
-* for models by Tohoku University, MeCab+mecab-ipadic-neologd is used for sentence segmentation
+* for models by Tohoku University, MeCab+mecab-ipadic-neologd is used for sentence segmentation (thanks @ikuyamada san!)
 
 
 ## Reference
