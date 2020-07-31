@@ -26,6 +26,8 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 | Tohoku University (b)      | MeCab (mecab-ipadic)                             | Character                                 | Sentencepiece (model_type=character)                                   |
 | NICT (a)                   | MeCab (mecab-jumandic)                           | WordPiece                                 | subword-nmt (BPE)                                                      |
 | NICT (b)                   | MeCab (mecab-jumandic)                           | ---                                       | ---                                                                    |
+| akirakubo (a)              | MeCab (unidic-cwj + unidic\_qkana)               | WordPiece                                 | subword-nmt (BPE)                                                      |
+| akirakubo (b)              | SudachiPy + MeCab (unidic\_qkana)                | WordPiece                                 | subword-nmt (BPE)                                                      |
 | The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic) | WordPiece                                 | ? (BPE)                                                                |
 | Laboro.AI Inc.             | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
 
@@ -45,5 +47,6 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 - Stockmark Inc. (2019/04): https://qiita.com/mkt3/items/3c1278339ff1bcc0187f
 - Tohoku University (2019/12): https://github.com/cl-tohoku/bert-japanese
 - NICT (2020/03): https://alaginrc.nict.go.jp/nict-bert/index.html
+- akirakubo (2020/03): https://github.com/akirakubo/bert-japanese-aozora
 - The University of Tokyo (2020/03): https://ai-health.m.u-tokyo.ac.jp/uth-ber
 - Laboro.AI Inc. (2020/04): https://laboro.ai/column/laboro-bert/
