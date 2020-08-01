@@ -26,7 +26,7 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 | Tohoku University (b)      | MeCab (mecab-ipadic)                             | Character                                 | Sentencepiece (model_type=character)                                   |
 | NICT (a)                   | MeCab (mecab-jumandic)                           | WordPiece                                 | subword-nmt (BPE)                                                      |
 | NICT (b)                   | MeCab (mecab-jumandic)                           | ---                                       | ---                                                                    |
-| akirakubo (a)              | MeCab (unidic-cwj + unidic\_qkana)               | WordPiece                                 | subword-nmt (BPE)                                                      |
+| akirakubo (a)              | MeCab (unidic-cwj) for Wikipedia and Aozora bunko written in `新仮名` + MeCab (unidic_qkana) for Aozora bunko written in `旧仮名`               | WordPiece                                 | subword-nmt (BPE)                                                      |
 | akirakubo (b)              | SudachiPy + MeCab (unidic\_qkana)                | WordPiece                                 | subword-nmt (BPE)                                                      |
 | The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic) | WordPiece                                 | ? (BPE)                                                                |
 | Laboro.AI Inc.             | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
