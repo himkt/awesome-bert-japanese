@@ -15,27 +15,27 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 ## Model
 
 
-| Model                      | Sentence -> Words                                | Word -> Subword                           | Algorithm for constructing vocabulary used in subword tokenization     |
-| :------------------------- | :----------------                                | :---------------------------------------- | :--------------------------------------------------------------------- |
-| Google (Multilingual BERT) | Whitespace                                       | WordPiece                                 | BPE?                                                                   |
-| Kikuta                     | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
-| Hotto Link Inc.            | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
-| Kyoto University           | Juman++                                          | WordPiece                                 | subword-nmt (BPE)                                                      |
-| Stockmark Inc.             | MeCab (mecab-ipadic-neologd)                     | --                                        | --                                                                     |
-| Tohoku University (a)      | MeCab (mecab-ipadic)                             | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
-| Tohoku University (b)      | MeCab (mecab-ipadic)                             | Character                                 | Sentencepiece (model_type=character)                                   |
-| NICT (a)                   | MeCab (mecab-jumandic)                           | WordPiece                                 | subword-nmt (BPE)                                                      |
-| NICT (b)                   | MeCab (mecab-jumandic)                           | ---                                       | ---                                                                    |
-| akirakubo (a)              | MeCab (unidic-cwj) for Wikipedia and Aozora bunko written in `新仮名` + MeCab (unidic_qkana) for Aozora bunko written in `旧仮名`               | WordPiece                                 | subword-nmt (BPE)                                                      |
-| akirakubo (b)              | SudachiPy (SudachiDict_core + A mode) for Wikipedia and Aozora bunko written in `新仮名` + MeCab (unidic_qkana) for Aozora bunko written in `旧仮名`                | WordPiece                                 | subword-nmt (BPE)                                                      |
-| The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic) | WordPiece                                 | ? (BPE)                                                                |
-| Laboro.AI Inc.             | --                                               | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
-
-
+| Model                      | Sentence -> Words                                                                                                                                    | Word -> Subword                           | Algorithm for constructing vocabulary used in subword tokenization     |
+| :------------------------- | :----------------                                                                                                                                    | :---------------------------------------- | :--------------------------------------------------------------------- |
+| Google (Multilingual BERT) | Whitespace                                                                                                                                           | WordPiece                                 | BPE?                                                                   |
+| Kikuta                     | --                                                                                                                                                   | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
+| Hotto Link Inc.            | --                                                                                                                                                   | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
+| Kyoto University           | Juman++                                                                                                                                              | WordPiece                                 | subword-nmt (BPE)                                                      |
+| Stockmark Inc.             | MeCab (mecab-ipadic-neologd)                                                                                                                         | --                                        | --                                                                     |
+| Tohoku University (a)      | MeCab (mecab-ipadic)                                                                                                                                 | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
+| Tohoku University (b)      | MeCab (mecab-ipadic)                                                                                                                                 | Character                                 | Sentencepiece (model_type=character)                                   |
+| NICT (a)                   | MeCab (mecab-jumandic)                                                                                                                               | WordPiece                                 | subword-nmt (BPE)                                                      |
+| NICT (b)                   | MeCab (mecab-jumandic)                                                                                                                               | ---                                       | ---                                                                    |
+| akirakubo (a)              | MeCab (unidic-cwj) for Wikipedia and Aozora bunko written in `新仮名` + MeCab (unidic_qkana) for Aozora bunko written in `旧仮名`                    | WordPiece                                 | subword-nmt (BPE)                                                      |
+| akirakubo (b)              | SudachiPy (SudachiDict_core + A mode) for Wikipedia and Aozora bunko written in `新仮名` + MeCab (unidic_qkana) for Aozora bunko written in `旧仮名` | WordPiece                                 | subword-nmt (BPE)                                                      |
+| The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic)                                                                                                     | WordPiece                                 | ? (BPE)                                                                |
+| Laboro.AI Inc.             | --                                                                                                                                                   | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
 
 * NICT: National Institute of Information and Communications Technology
-* without word segmentation: 文を単語に分割せず直接サブワードへ分割する
-* for models by Tohoku University, MeCab+mecab-ipadic-neologd is used for sentence segmentation (thanks @ikuyamada san!)
+* `without word segmentation`: 文を単語に分割せず直接サブワードへ分割する
+* For models by Tohoku University, MeCab+mecab-ipadic-neologd is used for sentence segmentation (thanks [@ikuyamada](https://github.com/ikuyamada) san!)
+* For models by akirakubo, documents in Aozora bunko are classified into two categories. It is based on types of kana spelling. (thanks [@kkadowa](https://github.com/kkadowa) san and [@akirakubo](https://github.com/akirakubo) san!
+  * See also: https://github.com/akirakubo/bert-japanese-aozora/issues/1#issuecomment-667495267
 
 
 ## Reference
