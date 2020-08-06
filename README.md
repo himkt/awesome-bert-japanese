@@ -37,7 +37,7 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 * For models by Tohoku University, MeCab+mecab-ipadic-neologd is used for sentence segmentation (thanks [@ikuyamada](https://github.com/ikuyamada) san!)
 * For models by akirakubo, documents in Aozora bunko are classified into two categories. It is based on types of kana spelling. (thanks [@kkadowa](https://github.com/kkadowa) san and [@akirakubo](https://github.com/akirakubo) san!
   * See also: https://github.com/akirakubo/bert-japanese-aozora/issues/1#issuecomment-667495267
-* For DistilBERT (by Bandai Namco Resean Inc.), the same configuration is used both for teacher/studen models.
+* For DistilBERT (by Bandai Namco Resean Inc.), the same word segmentation and algorithm for constructing vocabulary are used both for teacher/studen models.
 
 
 ## Reference
