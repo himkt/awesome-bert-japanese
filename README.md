@@ -31,6 +31,7 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 | The University of Tokyo    | MeCab (mecab-ipadic-neologd + user dic (J-MeDic)                                                                                                     | WordPiece                                 | ? (BPE)                                                                |
 | Laboro.AI Inc.             | --                                                                                                                                                   | Sentencepiece (without word segmentation) | Sentencepiece (model_type=unigram)                                     |
 | Bandai Namco Research Inc. | MeCab (mecab-ipadic)                                                                                                                                 | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
+| Retrieva, Inc.             | MeCab (mecab-ipadic)                                                                                                                                 | WordPiece                                 | Sentencepiece (model_type=bpe)                                         |
 
 * NICT: National Institute of Information and Communications Technology
 * `without word segmentation`: 文を単語に分割せず直接サブワードへ分割する
@@ -53,3 +54,4 @@ I summarize pretrained BERT models for Japanese by `word segmentation algorithm`
 - The University of Tokyo (2020/03): https://ai-health.m.u-tokyo.ac.jp/uth-ber
 - Laboro.AI Inc. (2020/04): https://laboro.ai/column/laboro-bert/
 - Bandai Namco Research Inc. (2020/04): https://github.com/BandaiNamcoResearchInc/DistilBERT-base-jp
+- Retrieva, Inc. (2021/04): https://tech.retrieva.jp/entry/2021/04/01/114943
